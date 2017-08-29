@@ -1,0 +1,294 @@
+body {
+  font-family: New Century Schoolbook, serif	;
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+}
+
+body * {
+  border-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-flow: wrap;
+}
+
+.header__logo {
+  width: 300px;
+  height: 110px;
+  display: block;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu__list {
+  list-style-type: none;
+  height: 50%;
+
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: darkgray;
+  }
+}
+
+.menu__item {
+  font: 12px BOOK ANTIQUA;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  text-transform: uppercase;
+
+  &:hover {
+    font-size: 12.2px;
+    color: darkgray;
+    font-weight: bold;
+  }
+
+  &:last-child {
+    padding-right: 20px;
+  }
+}
+
+.banners {
+  margin-top: 30px;
+  min-height: 400px;
+  background: url(../img/banner3.jpg) no-repeat 0 -100px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  transition: all 0.3s ease;
+
+
+  &__title {
+    font: 35px Courier, monospace;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 50px;
+  }
+}
+
+.button__banner{
+   margin-top: 60px;
+   margin-bottom: 20px;
+   display: inline-block;
+   width: 200px;
+   padding: 8px;
+   color: #fff;
+   border: 1px solid #fff;
+   border-radius: 5px;
+   text-align: center;
+   outline: none;
+   text-decoration: none;
+   transition: background-color 0.2s ease-out,
+   color 0.2s ease-out;
+
+
+  &:hover,
+  &:active {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+  }
+}
+
+.content {
+  margin: 100px 70px;
+}
+
+.content__center {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.content__name {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.content__list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.content__img {
+  max-width: 300px;
+  height: 220px;
+}
+
+.content__font {
+  width: 100%;
+  height: 100%;
+}
+
+.content__text {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 0 20px;
+}
+
+.content__tittle{
+  font-family: New Century Schoolbook, serif;
+  font-size: 20px;text-decoration: none;
+  color: black;
+
+}
+
+.content__article {
+  font-family: 'Josefin Slab', serif;
+  font-size: 18px;
+  max-width: 300px;
+  padding: 10px 0;
+}
+
+.content__top {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-end;
+}
+
+.content__title2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 200px;
+}
+
+.about{
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.about__main{
+  margin-left: 5%;
+  float: left;
+  width: 50%;
+}
+
+.about__img{
+  width: 500px;
+  height: 650px;
+}
+
+article#about__text{
+  margin-right: 5%;
+  float: right;
+  width: 40%;
+}
+
+.frame{
+  font-family: New Century Schoolbook, serif;
+  font-size: 17px;
+  color: black;
+  padding: 40px;
+  background: white;
+
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  margin-bottom: 80px;
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__items {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.article{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  margin-left: 5%;
+}
+
+.page-title{
+  font-family: New Century Schoolbook, serif	;
+  font-size: 30px;
+  text-align: center;
+}
+
+.paper{
+  margin-top: 60px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .content__list {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .content__items {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+
+}
+
+
